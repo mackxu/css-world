@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>测试img与img src</title>
+  </head>
+  <body>
+    <style>
+      .pa {
+        position: absolute;
+      }
+    </style>
+    <!-- <img class="pa" id="img" class="aaa" src="http://release-jenkins2.qiyi.domain/static/2673dc08/images/48x48/notepad.png" alt="ccc" width="300" height="150">
+    <span class="pa" id="span">xxxxxxxxxxxxxxxx</span>
+    <button class="pa" id="button">bbb</button> -->
+
+    <style>
+      .box {
+        box-sizing: border-box;
+        width: 80px;
+        padding: 20px 60px;
+      }
+      .in {
+        padding: 40px 60px;
+        background-color: #ccc;
+      }
+    </style>
+    <div class="box">qqq</div>
+    <span class="in">aaa</span>
+    <span class="in">bbb</span>
+
+    <br>
+    <style>
+      /*.btn {
+        line-height: 12px;
+      }*/
+      .btn + .btn::before {
+        content: '';
+        border-left: 1px solid;
+
+        padding: 10px 3px 1px;
+        margin-left: 6px;
+
+        font-size: 0;
+      }
+    </style>
+    <span class="btn">登录</span><span class="btn">注册</span>
+    <br/><br/><br/><br/>
+    <style>
+      .square-wrapper {
+        width: 120px;
+      }
+      .square {
+        padding: 50%;
+        background-color: #ccc;
+      }
+      .square2 {
+        padding: 25% 50%;
+        background-color: #ccc;
+      }
+    </style>
+    <div class="square-wrapper">
+      <div class="square"></div>
+    </div>
+    <br>
+    <div class="square-wrapper">
+      <div class="square2"></div>
+    </div>
+    <style>
+      .icon-dot {
+        box-sizing: border-box;
+        color: #eee;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 5px solid;
+        border-radius: 50%;
+
+        padding: 5px;
+
+        background-color: currentColor;
+        background-clip: content-box;
+      }
+    </style>
+    <div class="icon-dot"></div>
+    <br>
+    <style>
+      .icon-menu {
+        display: inline-block;
+        width: 30px;
+        height: 5px;
+        border-top: 5px solid;
+        border-bottom: 5px solid;
+
+        padding: 5px 0;
+
+        background-color: currentColor;
+        background-clip: content-box;
+
+        color: #ccc;
+      }
+    </style>
+    <div class="icon-menu"></div>
+    <style>
+      .boxH {
+        height: 1000px;
+      }
+      .hashtop {
+        padding-top: 100px;
+      }
+    </style>
+    <h3><span id="11" class="hashtop">padding-top</span></h3>
+    <!-- <div class="boxH"></div> -->
+    <a href="#11" class="link">hash</a>
+    <style>
+      /*.nums {
+        display: inline-block;
+        text-align: right;
+        border: 1px solid;
+        transform: rotateY(180deg);
+      }
+      .nums span {
+        display: inline-block;
+        transform: rotateY(180deg);
+      }*/
+      .nums-wrapper {
+        display: inline-block;
+        border: 1px solid;
+      }
+      .nums {
+        height: 0;
+        overflow: hidden;
+      }
+    </style>
+    <br>
+    <div class="nums-wrapper">
+      <span>7</span>
+      <div class="nums">
+        <span>7</span><br>
+        <span>41</span><br>
+        <span>15555555555</span><br>
+        <span>16</span><br>
+      </div>
+    </div>
+    <br>
+    <style>
+      .float-margin {
+        width: 100px;
+        height: 50px;
+        background-color: #ccc;
+
+        float: left;
+        margin-left: -100px;
+      }
+      .full {
+        float: left;
+        width: 100%;
+      }
+      .full p { margin-right: 100px }
+    </style>
+    <div class="full">
+      <p>content aaaa xxxxxx x xx xxx xxx x x xx x xxx xxx xxx xxx</p>
+    </div>
+    <div class="float-margin"></div>
+
+    <br>
+    <style>
+      .margin-lr {
+        width: 200px;
+        height: 80px;
+        background-color: #ccc;
+        margin-left: auto;
+        margin-right: 10px;
+      }
+      .margin-l {
+        width: 200px;
+        height: 80px;
+        background-color: #ccc;
+        margin-left: auto;
+      }
+      .w-mr-box {
+        width: 300px;
+        border: 1px solid;
+      }
+      .w-mr {
+        width: 200px;
+        height: 80px;
+        background-color: #ccc;
+        margin-right: 200px;
+      }
+    </style>
+    <div class="margin-lr"></div>
+    <p></p>
+    <!-- 有点像右浮动，但是需要设置宽度 -->
+    <div class="margin-l"></div>
+    <!-- 定宽 + mr无效 -->
+    <div class="w-mr-box">
+      <div class="w-mr"></div>
+    </div>
+
+    <style>
+      .sanjiao {
+        width: 16px;
+        border: 10px solid;
+        border-color: #f30 transparent transparent;
+        border-top-width: 14px;
+        /*border-top: 10px solid #f30;*/
+      }
+    </style>
+    <div class="sanjiao"></div>
+    <style>
+      .box4 {
+        display: inline-block;
+        width: 300px;
+        margin: 0 -20px;
+        background-color: #eee;
+      }
+    </style>
+    bbb<div class="box4">aaaa</div>ccc
+    <br>
+    <style>
+      .box5 { overflow: hidden; }
+      .box5 .fl { float: left; margin-right: 120px height: 100px; background-color: #eee; }
+      .box5 .fr { float: right; width: 100px; height: 100px; background-color: #eee; }
+    </style>
+    <div class="box5">
+      <div class="fl">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxx xx xx xx x xxx xx</div>
+      <div class="fr"></div>
+    </div>
+    <style>
+      .box6 {
+        box-sizing: border-box;
+        width: 400px;
+        border-left: 150px solid #333;
+        background-color: #eee;
+
+        overflow: hidden;
+      }
+      .box6 .nav {
+        width: 150px;
+        margin-left: -10px;
+        float: left;
+
+        color: #fff;
+      }
+      .box6 .section {
+        height: 100px;
+      }
+    </style>
+    <div class="box6">
+      <div class="nav">xxx<br>zzz</div>
+      <div class="section"></div>
+    </div>
+    <br>
+    <style>
+      .clear-box {
+        margin-bottom: 30px;
+      }
+      .clear-box::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .clear-box .fl {
+        float: left;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 40px;
+
+        background-color: #ccc;
+      }
+    </style>
+    <div class="clear-box">
+      <div class="fl"></div>
+    </div>
+    <br>
+    <!-- 测试滚动容器的padding-bottom -->
+    <style>
+      .view-container {
+        height: 100px;
+        overflow: auto;
+        background-color: #eee;
+      }
+      .scroll-container {
+        padding-bottom: 20px;
+      }
+    </style>
+    <div class="view-container">
+      <div class="scroll-container">
+        <img src="http://release-jenkins2.qiyi.domain/static/2673dc08/images/48x48/notepad.png" height="200">aa
+      </div>
+    </div>
+    <br>
+    <style>
+      .ao {
+        display: inline-block;
+        width: 0;
+      }
+      .ao::after {
+        content: 'fuck你';
+        outline: 1px solid #f00;
+        word-break: break-all;
+      }
+    </style>
+    <div class="ao"></div>
+    <style>
+      .pa2 {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        height: 100%;
+        background-color: #f00;
+      }
+    </style>
+    <div class="pa2"></div>
+    <br>
+    <style>
+      .selection::selection {
+        color: #fff;
+        background-color: #000;
+      }
+    </style>
+    <div class="selection">我是选取的部分</div>
+    <br>
+    <style>
+      .multi_bg_example {
+        height: 200px;
+        background-image   : url(http://release-jenkins2.qiyi.domain/static/2673dc08/images/48x48/notepad.png),
+                             url(http://release-jenkins2.qiyi.domain/static/2673dc08/images/48x48/notepad.png),
+                             linear-gradient(to right, rgba(30, 75, 115, 1),  rgba(255, 255, 255, 0));
+
+        background-repeat  : no-repeat,
+                             no-repeat,
+                             no-repeat;
+
+        background-position: bottom right,
+                             center left,
+                             left;
+        background-size: 10%, 10%, cover;
+      }
+    </style>
+    <div class="multi_bg_example"></div>
+  </body>
+</html>

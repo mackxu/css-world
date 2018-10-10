@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>absolute与text-align</title>
+</head>
+<body>
+  <!-- 
+      无依赖绝对定位与text-align,完成右侧Back
+   -->
+  <style>
+    .container {
+      width: 980px;
+      margin: 0 auto;
+      border: 1px solid saddlebrown;
+    }
+    .main {
+      height: 1000px;     
+    }
+    .alignright {
+      text-align: right;
+    }
+    .follow {
+      position: fixed;
+      bottom: 100px;
+      margin-left: 50px;
+    }
+  </style>
+  <div class="container">
+    <div class="main"></div>
+    <div class="backToTop alignright">
+        <span class="follow">back</span>
+      </div>
+  </div>
+</body>
+</html>
