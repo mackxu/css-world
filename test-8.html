@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>测试img与img src</title>
+  </head>
+  <body>
+    <style>
+      .aaa::after {
+        content: attr(alt);
+      }
+      .bbb::after {
+        content: attr(alt);
+      }
+    </style>
+    <img class="aaa" src="http://release-jenkins2.qiyi.domain/static/2673dc08/images/48x48/notepad.png" alt="ccc" width="300" height="150">
+    <img>
+    <img width="300" height="150">
+    <img src="" alt="" width="300" height="150">
+    <!-- img与span的区别是一个src属性（firefix） -->
+    <style>
+      .block {
+        display: block;
+        outline: 1px solid;
+      }
+    </style>
+    <img class="block bbb" alt="xxx">
+  </body>
+</html>

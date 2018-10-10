@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>伪元素辅助实现两端对齐：原理 是vertical-align与inline-block</title>
+</head>
+<body>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      text-align: justify;
+      border-bottom: 1px solid;
+    }
+    .box::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+    }
+    .box::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    .bar {
+      display: inline-block;
+      width: 28px;
+      background-color: #ccc;
+    }
+  </style>
+  <!-- box 与 bar 不能有空格 -->
+  <div class="box"><div class="bar" style="height: 100px; background-color: #ccc;"></div>
+    <div class="bar" style="height: 20px; background-color: #333;"></div>
+    <div class="bar" style="height: 120px; background-color: #3ee;"></div>
+  </div>
+</body>
+</html>

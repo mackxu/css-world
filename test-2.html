@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>z-index 大比拼</title>
+</head>
+<body>
+  <!-- 
+    opacity(非1) vs position
+    transform vs position
+   -->
+   <style>
+     div {
+       height: 100px;
+     }
+     .position {
+       position: absolute;
+       height: 100px;
+       width: 300px;
+       background-color: aqua;
+       z-index: 10;
+     }
+     .opacity-box {
+       opacity: .9;
+     }
+     .box {
+        position: absolute;
+        z-index: 2; 
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+     }
+     .transform {
+       transform: scale(1);
+       height: 300px;
+       width: 100px;
+       background-color: aquamarine;
+     }
+   </style>
+   <div class="position"></div>
+   <div class="opacity-box"><div class="box"></div></div>
+   <div class="transform"></div>
+</body>
+</html>
